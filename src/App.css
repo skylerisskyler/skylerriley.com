@@ -1,32 +1,110 @@
+@media only screen and (max-width: 700px) {
+  /* For mobile: */
+  .links {width: 100%;}
+  .name {font-size: 50px;}
+  .detail {font-size: 30px;}
+  .photo img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  /* For desktop: */
+  .links {width: 40%;}
+  .name {font-size: 70px;}
+  .detail {font-size: 45px;}
+  .photo img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+body {
+  margin: 0 auto;
+  background: white;
+  font: helvetica;
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid black;
+  height: 8vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.links {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+
+  height: 100%;
+ 
+}
+
+.landing {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+
+}
+
+.jumbotron {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.name {
+  font-weight: bolder;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+}
+
+.photo img {
+  border-radius: 100%;
+  border: 5px solid black;
+}
+
+.details {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.detail {
+  display: flex;
+  justify-content: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.barrier {
+  display: flex;
+  justify-content: center;
+  width: 210px;
+  height: 5px;
+  background-color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#social-icon img {
+  height: 30px;
+  width: 30px;
+
 }
