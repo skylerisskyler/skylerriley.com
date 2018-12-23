@@ -5,4 +5,4 @@
 
 - __Build__ with React.js and Node.js
 
-- __Hosted__ with Digital Ocean: Ubuntu and Nginx
+- __Hosted__ on Digital Ocean: Ubuntu and Nginx
