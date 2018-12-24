@@ -11,12 +11,13 @@ export class Landing extends Component {
             <div className="name">Skyler Riley</div>
 
             <div className="photo">
-                <img src={profile_photo} alt="Ss"/>
+                <img src={profile_photo} alt="Skyler Riley"/>
             </div>
 
             <div className="details">
                 <div className="detail">Web</div>                   
                 <div className="barrier"></div>
+                
                 <div className="detail">Blockchain</div>
             </div>
     

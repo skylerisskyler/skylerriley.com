@@ -13,7 +13,7 @@ export class Navbar extends Component {
         <div className="links">
           
           <div id="social-icon" >
-            <a href="mailto:riley.skyler@gmail.com">
+            <a href="mailto:skyler@skylerriley.com">
               <img src={mail} alt="email"/>
             </a>
           </div>
