@@ -5,6 +5,7 @@ import linkedin from './images/linkedin.png'
 import mail from './images/mail.png'
 import twitter from './images/twitter.png'
 import youtube from './images/youtube.png'
+import github from './images/github.png'
 
 export class Navbar extends Component {
   render() {
@@ -15,6 +16,12 @@ export class Navbar extends Component {
           <div id="social-icon" >
             <a href="mailto:skyler@skylerriley.com">
               <img src={mail} alt="email"/>
+            </a>
+          </div>
+          
+          <div id="social-icon" >
+            <a href="https://github.com">
+              <img src={github} alt="github"/>
             </a>
           </div>
 
