@@ -20,7 +20,7 @@ export class Navbar extends Component {
           </div>
           
           <div id="social-icon" >
-            <a href="https://github.com">
+            <a href="https://github.com/rileyskyler">
               <img src={github} alt="github"/>
             </a>
           </div>
