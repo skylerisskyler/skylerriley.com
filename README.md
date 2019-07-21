@@ -1,5 +1,3 @@
 # SkylerRiley.com
+### Personal Portfolio Site
 
-### Person portfolio Site
-
-#### Built with GatsbyJS
