@@ -1,21 +1,27 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import "../App.css";
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+import NavBar from "../components/Navbar";
+import Landing from "../components/Landing";
+import About from '../components/About';
+import Projects from '../components/Projects';
+import Contact from '../components/Contact';
+
+export default () => (
+  <div className="s" style={{backgroundColor: '', height: '300vh'}}>
+    <NavBar />
+    <div id={'landing'} className="landing-b" style={{height: '100vh'}}>
+      <Landing />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+    <div id={'about'} className="about-b"  style={{backgroundColor: '', height: '100vh'}}>
+      <About />
+    </div>
+    <div id={'projects'}  className="projects-b"  style={{backgroundColor: '', height: '100vh'}}>
+      <Projects />
+    </div>
+    <div id={'contact'}  className="contact-b"  style={{backgroundColor: '', height: '100vh'}}>
+      <Contact />
+    </div>
+  </div>
 )
-
-export default IndexPage
