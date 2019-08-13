@@ -9,19 +9,13 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 
 export default () => (
-  <div className="s" style={{backgroundColor: '', height: '300vh'}}>
+  <div className="s">
     <NavBar />
-    <div id={'landing'} className="landing-b" style={{height: '100vh'}}>
-      <Landing />
-    </div>
-    <div id={'about'} className="about-b"  style={{backgroundColor: '', height: '100vh'}}>
-      <About />
-    </div>
-    <div id={'projects'}  className="projects-b"  style={{backgroundColor: '', height: '100vh'}}>
-      <Projects />
-    </div>
-    <div id={'contact'}  className="contact-b"  style={{backgroundColor: '', height: '100vh'}}>
+    <Landing />
+    <About />
+    <Projects />
+    {/* <div id={'contact'}  className="contact-b"  style={{backgroundColor: '', height: '100vh'}}>
       <Contact />
-    </div>
+    </div> */}
   </div>
 )
