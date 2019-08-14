@@ -11,6 +11,7 @@ body {
 .navbar {
   color: white;
   width: 100%;
+  height: 55px;
   position: fixed;
   background-color: rgb(39, 39, 39);
   display: flex;
@@ -22,21 +23,28 @@ body {
 .profile-photo {
   height: 100%;
   display: flex;
-  align-items: center;
-  padding-left: 10px;
+  /* align-items: s; */
+  /* padding-left: 10px; */
 }
 
-.profile-photo img {
-  padding: 6px;
+.navbar-item img {
+  /* padding: 6px; */
   height: 2.2rem;
   border-radius: 50%; 
+}
+
+.navbar-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-item a {
   /* display: inline-block; */
   display: flex;
   justify-content: space-between;
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   text-decoration: none;
   color: #B9B7B7;
   font-size: 20px;
@@ -185,8 +193,10 @@ body {
   /* border: 1px solid slateblue; */
   /* background-color: lightblue;  */
 }
+
 .project-item p {
   margin-top: 10px;
+  text-align: center;
 }
 
 .project-item h3 {
@@ -194,7 +204,13 @@ body {
 }
 
 .project-thumb {
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.project-thumb img {
   width: 300px;
+  max-height: 50px;
 }
 
 /* project */
@@ -202,7 +218,13 @@ body {
 .navbar-links {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  /* background-color: peachpuff; */
 }
 
 .button-container {
@@ -228,13 +250,14 @@ body {
   flex-direction: column;
 }
 
+
 .project-tech-container img {
   width: 20px;
   /* background-color: aqua; */
 }
 
 .button-container button {
-  width: 70px;
+  width: 80px;
   height: 20px;
   background-color: white;
   color: black;
@@ -244,9 +267,9 @@ body {
 
 .contact {
   background-color: white;
-  height: 80vh;
+  height: 100vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
   /* background-color: peachpuff; */
 
@@ -266,6 +289,11 @@ body {
   /* background-color: aqua; */
 }
 
+.contact-icons a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .contact-icon {
   display: flex;
   flex-direction: column;
@@ -277,4 +305,12 @@ body {
 
 .contact-icon p {
   padding-top: 5px;
+}
+
+.navbar-item > .active { 
+  color: white;
+}
+
+#nav-photo > .active {
+  visibility: hidden;
 }

@@ -4,22 +4,34 @@ import ProfilePhoto from '../../static/profile.jpg';
 
 const NavBar = () => (
   <nav className="navbar">
-    <a className="profile-photo"
-      onClick={() => animateScroll.scrollToTop()}
-    >
-      <img src={ProfilePhoto} />
-    </a>
     <ul className="navbar-links">
+      <li
+        id="nav-photo"
+        className="navbar-item"
+        onClick={() => animateScroll.scrollToTop()}
+      >
+        <Link
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration= {500}
+          to="landing"
+        >
+          <img src={ProfilePhoto} />
+        </Link>
+      </li>
       {
         ['About', 'Projects', 'Contact'].map(i => (
           <li key={i} className="navbar-item">
             <Link
-              // activeClass={i.toLowerCase()}
+              activeClass="active"
               spy={true}
               smooth={true}
               offset={0}
               duration= {500}
               to={i.toLowerCase()}
+              // className={`${i}-active`}
             >
               {i}
             </Link>
