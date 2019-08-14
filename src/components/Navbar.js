@@ -23,7 +23,7 @@ const NavBar = () => (
     <ul className="navbar-links">
       {
         ['About', 'Projects', 'Contact'].map(i => (
-          <li className="navbar-item">
+          <li key={i} className="navbar-item">
             <Link
               // activeClass={i.toLowerCase()}
               spy={true}
