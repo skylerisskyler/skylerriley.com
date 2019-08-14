@@ -1,32 +1,45 @@
 import React from 'react';
 import { Link, animateScroll } from "react-scroll";
+import ProfilePhoto from '../../static/profile.jpg';
 
 const NavBar = () => (
-  <div className='navbar'>
-    <ul>
-      <li>
-        <button onClick={() => animateScroll.scrollToTop()}>TOP</button>
+  <nav className="navbar">
+    <ul className="navbar-links">
+      <li
+        id="nav-photo"
+        className="navbar-item"
+        onClick={() => animateScroll.scrollToTop()}
+      >
+        <Link
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration= {500}
+          to="landing"
+        >
+          <img src={ProfilePhoto} />
+        </Link>
       </li>
       {
-        ['About', 'Projects', 'Contact'].map(i => {
-          return (
-            <li key={i}>
-              <Link
-                activeClass={i.toLowerCase()}
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration= {500}
-                to={i.toLowerCase()}
-              >
-                {i}
-              </Link>
-            </li>
-          )
-        })
+        ['About', 'Projects', 'Contact'].map(i => (
+          <li key={i} className="navbar-item">
+            <Link
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration= {500}
+              to={i.toLowerCase()}
+              // className={`${i}-active`}
+            >
+              {i}
+            </Link>
+          </li>
+        ))
       }
     </ul>
-  </div>
+  </nav>
 )
 
 export default NavBar;
