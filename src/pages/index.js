@@ -14,8 +14,6 @@ export default () => (
     <Landing />
     <About />
     <Projects />
-    {/* <div id={'contact'}  className="contact-b"  style={{backgroundColor: '', height: '100vh'}}>
-      <Contact />
-    </div> */}
+    {/* <Contact /> */}
   </div>
 )
