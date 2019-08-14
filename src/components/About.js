@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About = () => (
-  <div className="aboutz">
+  <div className="about">
     <div className="about-background">
       <div className="about-main">
         <h1>About</h1>

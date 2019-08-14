@@ -2,22 +2,11 @@ import React from 'react';
 import { Link, animateScroll } from "react-scroll";
 import ProfilePhoto from '../../static/profile.jpg';
 
-              // <li key={i}>
-              //   <Link
-              //     activeClass={i.toLowerCase()}
-              //     spy={true}
-              //     smooth={true}
-              //     offset={0}
-              //     duration= {500}
-              //     to={i.toLowerCase()}
-              //   >
-              //     {i}
-              //   </Link>
-              // </li>
-
 const NavBar = () => (
   <nav className="navbar">
-    <a className="profile-photo">
+    <a className="profile-photo"
+      onClick={() => animateScroll.scrollToTop()}
+    >
       <img src={ProfilePhoto} />
     </a>
     <ul className="navbar-links">

@@ -14,6 +14,6 @@ export default () => (
     <Landing />
     <About />
     <Projects />
-    {/* <Contact /> */}
+    <Contact />
   </div>
 )

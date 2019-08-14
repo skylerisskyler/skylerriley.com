@@ -79,7 +79,7 @@ body {
   align-items: center;
 }
 
-.aboutz {
+.about {
   height: 100vh;
   width: 100%;
   background-color: black;
@@ -145,7 +145,7 @@ body {
 
 .projects-content {
   display: flex;
-  align-content: space-between;
+  align-content: space-around;
   flex-direction: column;
   justify-content: center;
   width: 75%;
@@ -244,11 +244,37 @@ body {
 
 .contact {
   background-color: white;
-  height: 100vh;
+  height: 80vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* background-color: peachpuff; */
+
 }
 
 .contact h1 {
   padding-top: 65px;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding-top: 100px;
+  /* background-color: aqua; */
+}
+
+.contact-icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-icon img {
+  width: 50px;
+}
+
+.contact-icon p {
+  padding-top: 5px;
 }
